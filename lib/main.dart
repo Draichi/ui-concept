@@ -50,7 +50,43 @@ class _MyAppState extends State<MyApp> {
                 children: <Widget>[
                   Text("Trending",style: TextStyle(
                     color: Colors.white,
-                  ),)
+                    fontSize: 46.0,
+                    fontFamily: "Calibre-Semibold",
+                    letterSpacing: 1.0
+                  )),
+                  IconButton(
+                    icon: Icon(
+                      CustomIcons.more,
+                      size: 30.0,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {}
+                  )
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFFff6e6e),
+                        borderRadius: BorderRadius.circular(20.0)
+                    ),
+                    child: Center(
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 22.0, vertical: 6.0),
+                        child: Text(
+                          "Anumated",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 15.0,),
+                  Text("25+ stories",
+                    style: TextStyle(color: Colors.blueAccent),)
                 ],
               ),
             )
