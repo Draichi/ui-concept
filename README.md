@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-https://www.youtube.com/watch?v=5KbiU-93-yU&list=WL&index=34&t=0s
+[:)](https://youtu.be/5KbiU-93-yU?t=308)
 
 ## Getting Started
 
