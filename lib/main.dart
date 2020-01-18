@@ -91,7 +91,7 @@ class _MyAppState extends State<MyApp> {
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 22.0, vertical: 6.0),
                         child: Text(
-                          "Lucas",
+                          "Latest",
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
@@ -115,6 +115,65 @@ class _MyAppState extends State<MyApp> {
                       return Container();
                     },
                   ),
+                )
+              ],
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text("Favourite",style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 46.0,
+                      fontFamily: "Calibre-Semibold",
+                      letterSpacing: 1.0
+                  )),
+                  IconButton(
+                      icon: Icon(
+                        CustomIcons.more,
+                        size: 30.0,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {}
+                  )
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.blueAccent,
+                        borderRadius: BorderRadius.circular(20.0)
+                    ),
+                    child: Center(
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 22.0, vertical: 6.0),
+                        child: Text(
+                          "Latest",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 15.0,),
+                  Text("9+ stories",
+                    style: TextStyle(color: Colors.blueAccent),)
+                ],
+              ),
+            ),
+            SizedBox(height: 20.0,),
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(left: 18.0),
+                  child: ClipRRect(
+                    child: Image.asset("assets/image_02.jpg", width: 296.0, height: 222.0,),
+                    borderRadius: BorderRadius.circular(20.0)
+                  )
                 )
               ],
             )
@@ -191,6 +250,22 @@ class CardScrollWidget extends StatelessWidget {
                                   fontSize: 25.0,
                                   fontFamily: "SF-Pro-Text-Regular"
                                 ),),
+                              ),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 12.0, bottom: 12.0),
+                                child: Container(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 22.0, vertical: 6.0
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: Colors.blueAccent,
+                                    borderRadius: BorderRadius.circular(20.0)
+                                  ),
+                                  child: Text("Read Later", style: TextStyle(color: Colors.white),),
+                                ),
                               )
                             ],
                           ),
